@@ -24,7 +24,7 @@ async function generate(
   }
 }
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+const s = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
     try {
       const { owner, repo, color = '#FFF' } = req.body || {};
@@ -55,3 +55,5 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     res.status(400).end();
   }
 };
+
+export default s;
