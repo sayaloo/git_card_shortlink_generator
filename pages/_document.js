@@ -1,3 +1,4 @@
+// eslint-disable-next-line react/display-name
 import Document from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
