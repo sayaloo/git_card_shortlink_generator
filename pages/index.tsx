@@ -8,6 +8,7 @@ import styles from '../styles/Home.module.css';
 import GenFrom from '../components/GenForm/GenFrom';
 
 const Home: NextPage = () => {
+  //
   const setResult = (res: string) => {
     console.log(res);
   };
