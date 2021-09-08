@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import axios from 'axios';
 
 const useSubmit = (setResult: (res: string) => void, owner: string, repo: string, color: string) => {
@@ -28,7 +28,7 @@ const useSubmit = (setResult: (res: string) => void, owner: string, repo: string
       console.log(e);
       setLoading(false);
     });
-  }, [ owner, repo, color ]);
+  }, [ owner, repo, color, setResult]);
 
   return { handleSubmit, loading, link };
 
