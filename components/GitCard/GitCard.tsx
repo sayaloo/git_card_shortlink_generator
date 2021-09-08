@@ -1,4 +1,5 @@
 import React from 'react';
+import Img from 'next/image';
 import Avatar from '@material-ui/core/Avatar';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -17,7 +18,7 @@ const GitCard = ({ color, repository }: { color: string, repository: Repository 
     <CardContainer color={color}>
       <Card>
         <CardHeader
-          avatar={ <img src={repository.avatar} alt="avatar" className="avatar"/>}
+          avatar={ <Img src={repository.avatar} alt="avatar" width="50px" height="50px" className="avatar"/>}
           title={repository.repo}
           className="card-header"
           action={
