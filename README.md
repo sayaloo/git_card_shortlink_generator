@@ -4,7 +4,7 @@ Mini-Git generates cards for your GitHub repositories.
 
 ## Tech Stack
 Backend: MongoDB, mongoose, MongoDB Atlas
-Front-end: NextJS, Material-UI, styled-components, Typescripts
+Front-end: NextJS, Material-UI, styled-components, Typescript
 
 ## How To Run?
 
